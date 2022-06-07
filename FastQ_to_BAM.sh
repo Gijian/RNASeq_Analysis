@@ -64,3 +64,15 @@ done
 rm temp1.fq.gz
 rm temp2.fq.gz
 rm temp.sam
+
+## fastp https://github.com/OpenGene/fastp
+## Shifu Chen, Yanqing Zhou, Yaru Chen, Jia Gu; fastp: an ultra-fast all-in-one FASTQ preprocessor, 
+## Bioinformatics, Volume 34, Issue 17, 1 September 2018, Pages i884–i890, https://doi.org/10.1093/bioinformatics/bty560
+
+## Hisat2 http://daehwankimlab.github.io/hisat2/
+## Kim D, Langmead B, and Salzberg SL HISAT: a fast spliced aligner with low memory requirements, Nature methods, 2015
+
+## samtools https://github.com/samtools/samtools
+## Twelve years of SAMtools and BCFtools
+## Petr Danecek, James K Bonfield, Jennifer Liddle, John Marshall, Valeriu Ohan, Martin O Pollard, Andrew Whitwham, Thomas Keane, Shane A McCarthy, Robert M Davies, Heng Li
+## GigaScience, Volume 10, Issue 2, February 2021, giab008, https://doi.org/10.1093/gigascience/giab008
