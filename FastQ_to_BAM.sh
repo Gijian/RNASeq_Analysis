@@ -27,7 +27,7 @@ do
   
   ## Check to see if the BAM file for this sample already exist.  If so, it would skip. This would allow for script to resume of something happen during multiple file processing.
   
-	if [ -s ./bam2/$i\.bam ]  
+	if [ -s ./bam/$i\.bam ]  
 	then
 		echo "BAM alignment exist"
 	else
