@@ -9,8 +9,6 @@ library(DESeq2)
 ## Create Ensembl annotation object SQLite for reference gene using same reference GTF as featureCounts for consistency
 # ensembldb::ensDbFromGtf("C:/ref/Mouse/Mus_musculus.GRCm38.100.gtf") ## only run of need to create sqlite file for gene symbol mapping later
 
-ensdb<-ensembldb::EnsDb("C:/ref/Mouse/Mus_musculus.GRCm38.100.sqlite") ## Load sqlite
-
 d <- as.data.frame(data.table::fread("gene_count.txt")) ## data.table::fread load large file much faster
 d <- d[,-2:-6]  ## Remove unnecessary column from gene count file for DESeq2 DGE
 colnames(d) <- gsub(".bam", "", colnames(d))  ## Remove .bam from sample name
