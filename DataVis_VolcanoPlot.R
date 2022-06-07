@@ -1,3 +1,5 @@
+## Example plot that is created from this script is the file "Example_VolcanoPlot_Output.jpg"
+
 library(dplyr)
 library(ggplot2)
 library(ggrepel)
