@@ -8,7 +8,8 @@ d <- data.table::fread("Results_DGE_of_Treatment_vs_Control_shrinkage.csv") %>% 
 showgenes <- c("Fos","Met","Gata1","Ccr9") 
 ## Change font of label
 font_size <- 4 
-## Create a cap padj or pvalue.  The value is based on -log10(value).  You can use -log10(desired value) if preferred.  This cap is necessary if there are genes that just so high that it significantly shrink the plot
+## Create a cap padj or pvalue.  The value is based on -log10(value).  You can use -log10(desired value) if preferred.  
+## This cap is necessary if there are genes that just so high that it significantly shrink the plot
 padj_cap_value <- 10 
 ## Similar to capping the significant value.  This cap significantly large FC when comparing to the other genes
 l2fc_cap_value <- 3
