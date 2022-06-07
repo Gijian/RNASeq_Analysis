@@ -64,9 +64,9 @@ d <- d[,-2:-5]
 
 colnames(d) <- gsub(".bam", "", colnames(d))
 
-d <- tibble::column_to_rownames(tibble::remove_rownames(d), var = "Geneid"))
+d <- tibble::column_to_rownames(tibble::remove_rownames(d), var = "Geneid")
 
-meanfraglength <- c(327,340,310,332,319,324) ## The mean fragment length was determined externally.  If this information is absence, use the previous function counts_to_tpm_nofl
+meanfraglength <- c(327,340,310,332,319,324) ## The mean fragment length was determined externally (DO NOT USE THESE VALUES for your sample).  If this information is absence, use the previous function counts_to_tpm_nofl
 
 tpm_count <- as.data.frame(counts_to_tpm(d[,-1], d[,1], meanfraglength)) ## Counts info is in the dataframe after first column.  Length information is in the first column. 
 
